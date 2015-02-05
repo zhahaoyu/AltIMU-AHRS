@@ -49,14 +49,14 @@ grad2rad = 3.141592/180.0
 ser = serial.Serial(port='COM3',baudrate=115200, timeout=1)
 
 # Main scene
-scene=display(title="Pololu MinIMU-9 + Arduino AHRS")
+scene=display(title="AHRS 3D representation")
 scene.range=(1.2,1.2,1.2)
 #scene.forward = (0,-1,-0.25)
 scene.forward = (1,0,-0.25)
 scene.up=(0,0,1)
 
 # Second scene (Roll, Pitch, Yaw)
-scene2 = display(title='Pololu MinIMU-9 + Arduino AHRS',x=0, y=0, width=500, height=200,center=(0,0,0), background=(0,0,0))
+scene2 = display(title='Roll, Pitch, Yaw',x=0, y=0, width=500, height=200,center=(0,0,0), background=(0,0,0))
 scene2.range=(1,1,1)
 scene.width=500
 scene.y=200
@@ -95,7 +95,7 @@ arrow(color=color.green,axis=(1,0,0), shaftwidth=0.02, fixedwidth=1)
 arrow(color=color.green,axis=(0,-1,0), shaftwidth=0.02 , fixedwidth=1)
 arrow(color=color.green,axis=(0,0,-1), shaftwidth=0.02, fixedwidth=1)
 # labels
-label(pos=(0,0,0.8),text="Pololu MinIMU-9 + Arduino AHRS",box=0,opacity=0)
+label(pos=(0,0,0.8),text="Niall Rocks!",box=0,opacity=0)
 label(pos=(1,0,0),text="X",box=0,opacity=0)
 label(pos=(0,-1,0),text="Y",box=0,opacity=0)
 label(pos=(0,0,-1),text="Z",box=0,opacity=0)
