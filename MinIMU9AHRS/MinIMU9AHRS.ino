@@ -84,9 +84,9 @@ int SENSOR_SIGN[9] = {1,1,1,-1,-1,-1,1,1,1}; //Correct directions x,y,z - gyro, 
 //OUTPUTMODE=0 will print uncorrected data of the gyros (with drift)
 #define OUTPUTMODE 1
 
-//#define PRINT_DCM 0     //Will print the whole direction cosine matrix
+#define PRINT_DCM 1     //Will print the whole direction cosine matrix
 #define PRINT_ANALOGS 0 //Will print the analog raw data
-#define PRINT_EULER 1   //Will print the Euler angles Roll, Pitch and Yaw
+#define PRINT_EULER 0   //Will print the Euler angles Roll, Pitch and Yaw
 
 #define STATUS_LED 13 
 
